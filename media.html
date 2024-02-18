@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Your Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="media.html">TheMajesticNetwork</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#press">Press and Media</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#news">News and Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#careers">Careers</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- About Us Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to The Majestic Network, where a decade of dedication has transformed us into a pioneering force in server hosting. For the past 10 years, we have not merely hosted servers; we've crafted an experience, a commitment to excellence that sets us apart in the industry.
+
+            Founded by a dynamic duo – a seasoned developer with an unwavering passion for innovation and a creative designer with an eye for aesthetics – The Majestic Network was born out of a shared vision to redefine the standards of server hosting. Our journey has been one of relentless pursuit – a continuous stride towards excellence, marked by the hallmark of customer-centricity.
+            
+            At The Majestic Network, our commitment to our customers goes beyond the conventional. We pride ourselves on being a customer-focused company, understanding that the heart of our success lies in the satisfaction of those we serve. This ethos has been the driving force behind every decision we make, ensuring that our clients not only receive cutting-edge hosting solutions but also an unparalleled level of customer service.
+            
+            What sets us apart is not just the servers we host but the relationships we build. We believe in going the extra mile, providing not just technical support but a partnership that grows with your needs. Our team is dedicated to ensuring that your experience with The Majestic Network is seamless, reliable, and tailored to your unique requirements.
+            
+            As we celebrate a decade of accomplishments, we remain steadfast in our commitment to being pioneers, continually raising the bar for ourselves and the industry. Join us at The Majestic Network and experience hosting like never before – where innovation meets reliability, and every client is more than a customer; they're a valued partner in our journey.
+        </p>
+        <a href="https://themajesticnetwork.com" class="btn btn-primary btn-lg" role="button">Go to TheMajesticNetwork</a>
+    </div>
+</section>
+
+<!-- Press and Media Section -->
+<section id="press" class="bg-light py-5">
+    <div class="container">
+        <h2>Press and Media</h2>
+        <p>
+            If you need to get into contact with someone regarding press/media, please email us at <a href="mailto:media@themajesticnetwork.com">media@themajesticnetwork.com</a>
+        </p>
+    </div>
+</section>
+
+<!-- News and Blogs Section -->
+<section id="news" class="py-5">
+    <div class="container">
+        <h2>News and Blogs</h2>
+        <p>
+            If you need to get into contact with someone regarding news/blogs, please email us at <a href="mailto:media@themajesticnetwork.com">media@themajesticnetwork.com</a>
+        </p>
+    </div>
+</section>
+
+<!-- Careers Section -->
+<section id="careers" class="bg-light py-5">
+    <div class="container">
+        <h2>Careers</h2>
+        <p>
+            If you need to contact someone about applying for a career with us, please email us at <a href="mailto:careers@themajesticnetwork.com">careers@themajesticnetwork.com</a>
+        </p>
+    </div>
+</section>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- JavaScript to scroll to section based on URL parameter -->
+<script>
+    // Function to scroll to a section based on URL parameter
+    function scrollToSection() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var sectionParam = urlParams.get('sec');
+        if (sectionParam) {
+            var targetSection = document.getElementById(sectionParam);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }
+
+    // Call the function when the page is loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        scrollToSection();
+    });
+</script>
+</body>
+</html>

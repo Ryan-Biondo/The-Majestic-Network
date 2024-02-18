@@ -1,0 +1,40 @@
+# System and editor files
+*.log
+*.sql
+*.swp
+.DS_Store
+.idea/
+.vscode/
+
+# Dependency directories
+/vendors/
+/node_modules/
+
+# Blesta specific directories
+/well-known/
+/cache/ 
+# If this contains cache or temporary files
+/components/ 
+# If not modifying or these are dynamically generated
+/core/ 
+# Core files should not be modified or tracked if they're part of Blesta's base
+/helpers/ 
+# Exclude if these are part of the core Blesta and not being modified
+/language/ 
+# Exclude if you're not adding or modifying languages
+/lib/ 
+# Exclude if managed by Composer or not directly modified
+/plugins/ 
+# Exclude if these are not being modified directly
+
+# Sensitive configuration files
+/config/*.php
+/.env
+/.rnd
+/.FTPquota
+
+# Installation script
+/install.php
+
+# Well-known directory (often used for SSL verification, consider excluding if necessary)
+/.well-known/
